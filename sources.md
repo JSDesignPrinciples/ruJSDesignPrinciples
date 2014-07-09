@@ -22,7 +22,6 @@ http://en.wikipedia.org/wiki/Category:Programming_principles
 Only talk to your immediate friends. ("One dot rule")
 
 * http://www.ericfeminella.com/blog/2008/02/02/principle-of-least-knowledge/
-* 
 
 ## Дополнительные подходы
 ### Offensive Programming (fail fast)
@@ -36,7 +35,9 @@ Only talk to your immediate friends. ("One dot rule")
 * http://programmers.stackexchange.com/questions/132425/how-did-you-get-good-practices-for-your-oop-designs
 * http://javarevisited.blogspot.com/2012/03/10-object-oriented-design-principles.html
 * http://www.slideshare.net/TelerikAcademy/highquality-classes-and-class-hierarchies-best-practices-in-the-objectoriented-design
+
 ### Component Driven Development
+
 * [Amazon: Component Software: Beyond Object-Oriented Programming](http://www.amazon.com/dp/0201178885/)
 * http://en.wikipedia.org/wiki/Component-based_software_engineering
 * http://gameprogrammingpatterns.com/component.html

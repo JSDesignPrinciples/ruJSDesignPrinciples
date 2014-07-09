@@ -25,5 +25,7 @@ http://en.wikipedia.org/wiki/Category:Programming_principles
 * [The Criticality of Modeling Formalisms in Software Design Method Comparison](http://laser.cs.umass.edu/techreports/96-49.pdf)
 * [Bringing Formalism and Unification to Human-Computer Interaction Design Patterns](http://dbonline.igroupnet.com/ACM.FT/1830000/1824754/p20-kruschitz.pdf)
 
+### Подходы к дизайну систем
+* [Introduction to Software Engineering](http://en.wikibooks.org/wiki/Introduction_to_Software_Engineering)
 
 

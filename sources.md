@@ -10,9 +10,7 @@ http://en.wikipedia.org/wiki/Category:Programming_principles
 #### Interface segregation principle / Принцип разделения интерфейса
 #### Dependency inversion principle /  Принцип инверсии зависимостей
 #### Law of Demeter /  Закон Деметры
-Only talk to your immediate friends. ("One dot rule")
-
-* http://www.ericfeminella.com/blog/2008/02/02/principle-of-least-knowledge/
+[Ссылка на черновик статьи](principles/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%94%D0%B5%D0%BC%D0%B5%D1%82%D1%80%D1%8B%20\(law%20of%20demeter\).md)
 
 ## Дополнительные подходы
 ### Offensive Programming (fail fast)

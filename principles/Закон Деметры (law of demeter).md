@@ -1,6 +1,37 @@
 # Low of demeter
+## Примерная схема
 
-## General links
+### Краткое описание
+Что это, зачем нужно и как помогает
+Пример с точками
+Пример с кошельком и деньгами
+
+### История
+Почему так называется, кто придумал
+### Примеры
+#### Чистый JavaScript
+Как это работает в JS
+
+#### Чейнинг в underscore | jquery
+Нарушает ли принцип деметры?
+
+#### Разрешение зависимостей и инжектор в ангулар
+Нарушает ли принцип деметры?
+
+#### Тестирование
+Что нужно знать о ПД при тестировании 
+
+## Заключение 
+Написать, что это хорошо, но увлекаться не стоит, и всегда нужно искать баланс.
+
+
+ 
+
+
+
+
+## Links
+### General links
 Wiki
 http://en.wikipedia.org/wiki/Law_of_Demeter
 
@@ -18,7 +49,7 @@ http://don.fed.wiki.org/view/law-of-demeter/sfw.c2.com/law-of-demeter-revisited
 Do fluent interfaces violate the Law of Demeter - applies to Javascript as well
 http://stackoverflow.com/questions/67561/do-fluent-interfaces-violate-the-law-of-demeter
 
-## JavaScript links
+### JavaScript links
 
 Promises and law of demeter:
 http://stackoverflow.com/questions/20275957/does-deferred-promise-promote-breaking-the-law-of-demeter
@@ -42,7 +73,7 @@ Transfer injector broke The law of Demeter(Law of Demeter, Least knowledge princ
 http://www.programering.com/a/MTO1EzMwATg.html
 
 
-## Other languages
+### Other languages
 
 original article about law of demeter
 http://www.ccs.neu.edu/research/demeter/papers/law-of-demeter/oopsla88-law-of-demeter.pdf
@@ -97,11 +128,11 @@ http://java.dzone.com/articles/law-demeter
 http://vitalflux.com/law-demeter-violations-fix/
 http://www.ericfeminella.com/blog/2008/02/02/principle-of-least-knowledge/
 
-## Not just demeter
+### Not just demeter
 http://www.bennadel.com/blog/2375-object-calisthenics-in-javascript-my-first-attempt.htm
 
 http://habrahabr.ru/post/206802/
-## Russian
+### Russian
 
 Nice discussion
 http://toster.ru/q/44822

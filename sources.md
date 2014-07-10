@@ -52,3 +52,5 @@ TDA design principle urges you to tell objects what to do. What you don't want t
 ### Паттерны
 * [Essential Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 * [Patterns for Large Scale Javascript Apps](http://addyosmani.com/largescalejavascript/)
+* **[ABSTRACTION CLASSES IN SOFTWARE DESIGN 
+](http://www.eden-study.org/articles/2006/abstraction-classes-sw-design_ieesw.pdf)**

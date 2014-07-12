@@ -14,6 +14,7 @@ Taken from http://www.ccs.neu.edu/home/lieber/LoD.html: 2003 was the 15 Year Ann
 Demeter has raised (ага)what we would know here as a CodeSmell to the level of a law. 
 
  Demeter tries to establish a relation about objects created and used within a method or function,
+ (now known in-house as the Law of Demeter or the Law of Good Style)
 ## Примерная схема
 
 ### Краткое описание

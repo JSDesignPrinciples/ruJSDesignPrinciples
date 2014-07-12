@@ -1,32 +1,28 @@
 # Low of demeter
-
-a specific case of loose coupling. 
-## Вопросы
-Как это работает с функциональным программированием?
-А как с фабриками? SomeFactory.createSomething().doSomething()
-Как это связано с TellDontAsk ?
-
-## Цитаты
-, it's a guidline to help reduce coupling in code
-
-Taken from http://www.ccs.neu.edu/home/lieber/LoD.html: 2003 was the 15 Year Anniversary of the Law of Demeter: The Law of Demeter is a simple style rule for designing ObjectOriented systems. "Only talk to your immediate friends" is the motto. The style rule was first proposed at Northeastern University in the fall of 1987 and popularized in books by Booch, Budd, Coleman, Larman, Page-Jones, Rumbaugh and others. A 2000 book that describes it well is The Pragmatic Programmer by AndrewHunt and DavidThomas. The name "Law of Demeter" was chosen because the style rule was discovered while working on the The Demeter Project which ever since was strongly influenced by the Law of Demeter. The Demeter Project develops tools that make it easier to follow the Law of Demeter. (Demeter = Greek Goddess of Agriculture; grow software in small steps) For example, "only talk to your immediate friends that share the same concerns" leads to tools for Aspect-Oriented Software Development.
-
-Demeter has raised (ага)what we would know here as a CodeSmell to the level of a law. 
-
- Demeter tries to establish a relation about objects created and used within a method or function,
- (now known in-house as the Law of Demeter or the Law of Good Style)
+a specific case of loose coupling.
 ## Примерная схема
-
-### Краткое описание
-
+### Краткое описание и как понять что закон нарушен
 Что это, зачем нужно и как помогает
-Пример с точками
-Пример с кошельком и деньгами
+Слишком большое количество точек (может нет, а может да)
+`a.b().c().d()` так же плохо как и `b = a.b(); c = b.c(); c.d()` 
+
+
 
 
 ### История
-Почему так называется, кто придумал
+Был придуман в 1987 году во время разработки проекта деметра.
+Изначально был сформулирован для 4х языков: Smalltalk, CLOS, C++ и Eiffel
+Изначально альтернативным названием было скромное "Правило хорошего стиля" (now known in-house as the Law of Demeter or the Law of Good Style)
+Проект по ходу сдох(пруф? ), а закон остался http://www.ccs.neu.edu/home/lieber/what-is-demeter.html
+Проект был назван в честь богини деметры, потому что в чуваков которые разрабатывали его был набор железа Зевс, с которым система должна была работать. Деметра - сестра зевса
+
 ### Примеры
+Закон деметры был сформулирован не для JavaScript и слепо применять его нельзя
+Однако польза от него может быть
+Мы постараемся разобраться объективно, где в JS стоит, а где не стоит применять закон деметры.
+
+Пример, где отдаешь кошелек вместо того, чтобы отдать деньги [1]
+Для неймспейса наверное не должно применяться. Например если есть сложный json, то client.info.address.line2 по идее ничего не нарушает
 
 http://en.wikipedia.org/wiki/Multilayered_architecture
 
@@ -35,25 +31,59 @@ http://en.wikipedia.org/wiki/Multilayered_architecture
 
 #### Чейнинг в underscore | jquery
 Нарушает ли принцип деметры?
-
-
-What about namespacing?
 utils.measurments.size( something )
 
 #### Разрешение зависимостей и инжектор в ангулар
 Нарушает ли принцип деметры?
 
-#### Тестирование
+
+### Тестирование
 Что нужно знать о ПД при тестировании 
+Не нужно создавать моки вложенный в моки и не нужно знать как фигня работает внутри.
 
-###
- Moжно ли отследить нарушения принципа с помощью статического анализа?
+## Плюсы 
+Видны и понятны все зависимости функции и класса
+проще тестировать, потом что не надо создавать вложенные моки
+Меньше всего менять (объснить)
+## Минусы  
+Больше функций 
+Нарушает Narrow interfaces
+Найти может быть довольно просто, но вот починить-не всегда
+
+
 ### Заключение 
-Написать, что это хорошо, но увлекаться не стоит, и всегда нужно искать баланс.
+Везде нужен баланс
 
 
+-------
+
+# Ссылки и прочие материалы для подготовки статьи
  
+ 
+## Вопросы и вещи которые пока непонятны
+Как это работает с функциональным программированием?
+А как с фабриками? SomeFactory.createSomething().doSomething()
+Как это связано с TellDontAsk ?
+Как это все соотносится с замыканиями?
+Как это все соотносится с промисами? Есть вопрос на СО, но там никто не понимает, что происходит http://stackoverflow.com/questions/20275957/does-deferred-promise-promote-breaking-the-law-of-demeter
+jQuery
+chaining in underscore?
+Функции которые приходят в качестве аргументов?
+Библиотеки. Вся эта фигня, чтобы если интерфейс объекта поменяется, не было боли. Библиотеки меняются редко, поэтому там можно простить нестинг и чейнинг?
+Moжно ли отследить нарушения принципа с помощью статического анализа?
+Определен ли закон на уровне функии или на уровне класса?
+–––
+## Цитаты
+, it's a guidline to help reduce coupling in code
 
+Taken from http://www.ccs.neu.edu/home/lieber/LoD.html: 2003 was the 15 Year Anniversary of the Law of Demeter: The Law of Demeter is a simple style rule for designing ObjectOriented systems. "Only talk to your immediate friends" is the motto. The style rule was first proposed at Northeastern University in the fall of 1987 and popularized in books by Booch, Budd, Coleman, Larman, Page-Jones, Rumbaugh and others. A 2000 book that describes it well is The Pragmatic Programmer by AndrewHunt and DavidThomas. The name "Law of Demeter" was chosen because the style rule was discovered while working on the The Demeter Project which ever since was strongly influenced by the Law of Demeter. The Demeter Project develops tools that make it easier to follow the Law of Demeter. (Demeter = Greek Goddess of Agriculture; grow software in small steps) For example, "only talk to your immediate friends that share the same concerns" leads to tools for Aspect-Oriented Software Development.
+
+Demeter has raised (ага)what we would know here as a CodeSmell to the level of a law. 
+
+ Demeter tries to establish a relation about objects created and used within a method or function,
+ 
+ 
+ 
 
 
 
@@ -66,6 +96,9 @@ http://c2.com/cgi/wiki?LawOfDemeter
 http://c2.com/cgi/wiki?LawOfDemeterIsInvalid
 http://c2.com/cgi/wiki?LawOfDemeterRevisited
 http://c2.com/cgi/wiki?IsLawOfDemeterOverspecifiedOnCeeTwo
+
+Хорошая статья, все отлично расписано, возможно - первоисточник примера с кошельком
+http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/demeter.pdf
  ---- Finished here
  http://c2.com/cgi/wiki?LawOfDemeterMakesUnitTestsEasier
 http://c2.com/cgi/wiki?LawOfDemeterIsHardToUnderstand 
@@ -186,3 +219,9 @@ http://vessi.github.io/blog/2012/07/18/zakon-diemietry-ili-poakkuratnieie-s-toch
 http://life-prog.ru/view_zam2.php?id=174&cat=5&page=8
 
 http://c2.com/cgi/wiki?InformationHiding
+http://vessi.github.com/blog/2012/07/18/zakon-diemietry-ili-poakkuratnieie-s-tochkami/
+http://msdn.microsoft.com/ru-ru/magazine/cc947917.aspx
+
+## Books
+pragmatic programmer 
+Clean code

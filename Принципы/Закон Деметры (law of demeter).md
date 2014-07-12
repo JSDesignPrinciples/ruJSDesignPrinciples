@@ -6,25 +6,41 @@ a specific case of loose coupling.
 Слишком большое количество точек (может нет, а может да)
 `a.b().c().d()` так же плохо как и `b = a.b(); c = b.c(); c.d()` 
 
-
+Закон деметры был сформулирован не для JavaScript и слепо применять его нельзя
+Однако польза от него может быть
+Мы постараемся разобраться объективно, где в JS стоит, а где не стоит применять закон деметры.
 
 
 ### История
 Был придуман в 1987 году во время разработки проекта деметра.
 Изначально был сформулирован для 4х языков: Smalltalk, CLOS, C++ и Eiffel
-Изначально альтернативным названием было скромное "Правило хорошего стиля" (now known in-house as the Law of Demeter or the Law of Good Style)
+Альтернативным названием  предложенным в статье было скромное "Правило хорошего стиля" (now known in-house as the Law of Demeter or the Law of Good Style)
 Проект по ходу сдох(пруф? ), а закон остался http://www.ccs.neu.edu/home/lieber/what-is-demeter.html
 Проект был назван в честь богини деметры, потому что в чуваков которые разрабатывали его был набор железа Зевс, с которым система должна была работать. Деметра - сестра зевса
 
-### Примеры
-Закон деметры был сформулирован не для JavaScript и слепо применять его нельзя
-Однако польза от него может быть
-Мы постараемся разобраться объективно, где в JS стоит, а где не стоит применять закон деметры.
 
+#### Пара абстрактных примеров, чтобы было понятно о чем речь
+
+Тут пример с заказами в последнем посте http://c2.com/cgi/wiki?LawOfDemeterMakesUnitTestsEasier
 Пример, где отдаешь кошелек вместо того, чтобы отдать деньги [1]
+Пример где не говоришь собакиной ноге что делать
 Для неймспейса наверное не должно применяться. Например если есть сложный json, то client.info.address.line2 по идее ничего не нарушает
 
 http://en.wikipedia.org/wiki/Multilayered_architecture
+## Зачем нам это нужно и к чему это может привести 
+### Плюсы
+Видны и понятны все зависимости функции и класса
+проще тестировать, потом что не надо создавать вложенные моки
+Меньше всего менять (объснить)
+Посволяет избавиться от ошибок, когда внешний класс не в курсе, что внутренний класс был изменен
+### Минусы  
+Больше функций 
+Нарушает Narrow interfaces
+Найти может быть довольно просто, но вот починить - не всегда, иногда пытаясь починить можно сделать еще хуже
+
+
+## Примеры
+Дальше мы пройдемся по примерам и для каждого посмотрим, даст ли применение ЗД обещанные выше плюсы, и удастсяли избежать минусов
 
 #### Чистый JavaScript
 Как это работает в JS
@@ -41,18 +57,12 @@ utils.measurments.size( something )
 Что нужно знать о ПД при тестировании 
 Не нужно создавать моки вложенный в моки и не нужно знать как фигня работает внутри.
 
-## Плюсы 
-Видны и понятны все зависимости функции и класса
-проще тестировать, потом что не надо создавать вложенные моки
-Меньше всего менять (объснить)
-## Минусы  
-Больше функций 
-Нарушает Narrow interfaces
-Найти может быть довольно просто, но вот починить-не всегда
+
 
 
 ### Заключение 
 Везде нужен баланс
+Как сказал мартин фоулер, "I've always felt I'd be more comfortable with the Law of Demeter if it were called the Suggestion of Demeter."
 
 
 -------
@@ -72,7 +82,8 @@ chaining in underscore?
 Библиотеки. Вся эта фигня, чтобы если интерфейс объекта поменяется, не было боли. Библиотеки меняются редко, поэтому там можно простить нестинг и чейнинг?
 Moжно ли отследить нарушения принципа с помощью статического анализа?
 Определен ли закон на уровне функии или на уровне класса?
-–––
+Массивы объектов - исключение из правила
+
 ## Цитаты
 , it's a guidline to help reduce coupling in code
 
@@ -82,7 +93,18 @@ Demeter has raised (ага)what we would know here as a CodeSmell to the level o
 
  Demeter tries to establish a relation about objects created and used within a method or function,
  
+ Something about telling the milk to uncow itself...?
  
+ 
+ The Demeter system considers Repetition objects as special classes of objects for which the oft-quoted normal Demeter "law" does not apply in the same manner. In fact, the Demeter method/system contains several laws/forms of Demeter, each of which applies to its appropriate context (which is still admittedly broad and abstract) and is not completely universal in applicability. People just tend to hear only about the form that is most commonly cited and not always with the appropriate context. Even so, for regular OOD/OOP, it's still more of a guideline (a very strong recommendation) rather than a hard and fast, inviolable rule.
+
+## Мысли
+### Статический анализ
+ В языке со статической типизацией можно выяснить, какие классы знают о других классах
+ Можно выяснить, какие классы напрямую зависят от других классов
+ Если из первого вычесть второе, то будет понятно
+ 
+ У руби есть какой-то инструмент для находжения нарушений ЗД, надо посмореть внимательнее 
  
 
 
@@ -99,9 +121,9 @@ http://c2.com/cgi/wiki?IsLawOfDemeterOverspecifiedOnCeeTwo
 
 Хорошая статья, все отлично расписано, возможно - первоисточник примера с кошельком
 http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/demeter.pdf
- ---- Finished here
  http://c2.com/cgi/wiki?LawOfDemeterMakesUnitTestsEasier
 http://c2.com/cgi/wiki?LawOfDemeterIsHardToUnderstand 
+ ---- Finished here
 http://c2.com/cgi/wiki?LawOfDemeterIsTooRestrictive
 http://c2.com/cgi/wiki?LawOfDemeterAndCoupling
 http://c2.com/cgi/wiki?TellDontAsk 

@@ -2,41 +2,56 @@
 a specific case of loose coupling.
 ## Примерная схема
 ### Краткое описание и как понять что закон нарушен
+
 Что это, зачем нужно и как помогает
+
 Слишком большое количество точек (может нет, а может да)
+
 `a.b().c().d()` так же плохо как и `b = a.b(); c = b.c(); c.d()` 
 
-Закон деметры был сформулирован не для JavaScript и слепо применять его нельзя
-Однако польза от него может быть
+Закон деметры был сформулирован не для JavaScript и слепо применять его нельзя Однако польза от него может быть
+
 Мы постараемся разобраться объективно, где в JS стоит, а где не стоит применять закон деметры.
 
 
 ### История
+
 Был придуман в 1987 году во время разработки проекта деметра.
+
 Изначально был сформулирован для 4х языков: Smalltalk, CLOS, C++ и Eiffel
+
 Альтернативным названием  предложенным в статье было скромное "Правило хорошего стиля" (now known in-house as the Law of Demeter or the Law of Good Style)
+
 Проект по ходу сдох(пруф? ), а закон остался http://www.ccs.neu.edu/home/lieber/what-is-demeter.html
+
 Проект был назван в честь богини деметры, потому что в чуваков которые разрабатывали его был набор железа Зевс, с которым система должна была работать. Деметра - сестра зевса
 
 
 #### Пара абстрактных примеров, чтобы было понятно о чем речь
 
 Тут пример с заказами в последнем посте http://c2.com/cgi/wiki?LawOfDemeterMakesUnitTestsEasier
+
 Пример, где отдаешь кошелек вместо того, чтобы отдать деньги [1]
+
 Пример где не говоришь собакиной ноге что делать
+
 Для неймспейса наверное не должно применяться. Например если есть сложный json, то client.info.address.line2 по идее ничего не нарушает
 
 http://en.wikipedia.org/wiki/Multilayered_architecture
 ## Зачем нам это нужно и к чему это может привести 
 ### Плюсы
-Видны и понятны все зависимости функции и класса
-проще тестировать, потом что не надо создавать вложенные моки
-Меньше всего менять (объснить)
-Посволяет избавиться от ошибок, когда внешний класс не в курсе, что внутренний класс был изменен
+
+* Видны и понятны все зависимости функции и класса
+* проще тестировать, потом что не надо создавать вложенные моки
+* Меньше всего менять (объснить)
+* Посволяет избавиться от ошибок, когда внешний класс не в курсе, что внутренний класс был изменен
+http://alvinalexander.com/java/java-law-of-demeter-java-examples
+
 ### Минусы  
-Больше функций 
-Нарушает Narrow interfaces
-Найти может быть довольно просто, но вот починить - не всегда, иногда пытаясь починить можно сделать еще хуже
+
+* Больше функций в интерфейсе 
+* Нарушает Narrow interfaces
+* Найти может быть довольно просто, но вот починить - не всегда, иногда пытаясь починить можно сделать еще хуже
 
 
 ## Примеры
@@ -54,10 +69,9 @@ utils.measurments.size( something )
 
 
 ### Тестирование
-Что нужно знать о ПД при тестировании 
-Не нужно создавать моки вложенный в моки и не нужно знать как фигня работает внутри.
 
-
+* Что нужно знать о ПД при тестировании 
+* Не нужно создавать моки вложенный в моки и не нужно знать как фигня работает внутри.
 
 
 ### Заключение 
@@ -83,6 +97,7 @@ chaining in underscore?
 Moжно ли отследить нарушения принципа с помощью статического анализа?
 Определен ли закон на уровне функии или на уровне класса?
 Массивы объектов - исключение из правила
+
 
 ## Цитаты
 , it's a guidline to help reduce coupling in code
@@ -128,6 +143,9 @@ http://c2.com/cgi/wiki?LawOfDemeterIsTooRestrictive
 http://c2.com/cgi/wiki?LawOfDemeterAndCoupling
 http://c2.com/cgi/wiki?TellDontAsk 
 http://c2.com/cgi/wiki?CanLawOfDemeterBeRefactoredAutomatically // bullshit
+
+Really nice presenation, great research, Java examples, have to read
+http://www.slideshare.net/vladimirtsukur/law-of-demeter-objective-sense-of-style
 
 Really nice collection of links
 http://www.ccs.neu.edu/home/lieber/LoD.html
@@ -220,6 +238,9 @@ http://misko.hevery.com/2008/07/18/breaking-the-law-of-demeter-is-like-looking-f
 http://java.dzone.com/articles/law-demeter
 http://vitalflux.com/law-demeter-violations-fix/
 http://www.ericfeminella.com/blog/2008/02/02/principle-of-least-knowledge/
+http://www.blackwasp.co.uk/LawOfDemeter.aspx
+http://eyalgo.com/2014/02/17/law-of-demeter-4/
+http://theshyam.com/tag/law-of-demeter/
 
 ### Not just demeter
 http://www.bennadel.com/blog/2375-object-calisthenics-in-javascript-my-first-attempt.htm
@@ -247,3 +268,14 @@ http://msdn.microsoft.com/ru-ru/magazine/cc947917.aspx
 ## Books
 pragmatic programmer 
 Clean code
+
+## testing
+http://googletesting.blogspot.com/2008/07/breaking-law-of-demeter-is-like-looking.html
+http://programmers.stackexchange.com/questions/232442/unit-testing-factories-and-the-law-of-demeter
+http://jayflowers.com/WordPress/?p=78
+http://codevanced.net/post/The-Law-of-Demeter-The-crux-of.aspx
+http://www.scottmcmaster365.com/2011/04/law-of-demeter-makes-you-create-mock.html
+
+http://stackoverflow.com/questions/19549535/intellij-ideas-law-of-demeter-inspection-false-positive-or-not
+https://code.google.com/p/testability-explorer/wiki/LawOfDemeterCostExplanation
+http://blog.bbv.ch/2011/03/28/law-of-demeter-and-testability/

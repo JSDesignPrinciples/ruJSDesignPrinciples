@@ -52,7 +52,7 @@ http://alvinalexander.com/java/java-law-of-demeter-java-examples
 * Больше функций в интерфейсе 
 * Нарушает Narrow interfaces
 * Найти может быть довольно просто, но вот починить - не всегда, иногда пытаясь починить можно сделать еще хуже
-
+todo: The LawOfDemeter minimizes logical coupling, but maximizes what could be called "physical coupling" -- the number of instantiated objects that need to be traversed for any particular operation. There are specific reasons why this might be bad. If performance is an issue, you might not want to incur the costs of implicitly navigating through a bunch of objects every time you call a top-level method. (This can be counteracted by caching intermediate objects, though that might be cumbersome in practice.) Similar issues can occur when you're using multithreading or distributed systems, where physical indirection can cause problems.
 
 ## Примеры
 Дальше мы пройдемся по примерам и для каждого посмотрим, даст ли применение ЗД обещанные выше плюсы, и удастсяли избежать минусов
@@ -138,8 +138,8 @@ http://c2.com/cgi/wiki?IsLawOfDemeterOverspecifiedOnCeeTwo
 http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/demeter.pdf
  http://c2.com/cgi/wiki?LawOfDemeterMakesUnitTestsEasier
 http://c2.com/cgi/wiki?LawOfDemeterIsHardToUnderstand 
+http://c2.com/cgi/wiki?LawOfDemeterIsTooRestrictive // see "How to apply the LawOfDemeter successfully"
  ---- Finished here
-http://c2.com/cgi/wiki?LawOfDemeterIsTooRestrictive
 http://c2.com/cgi/wiki?LawOfDemeterAndCoupling
 http://c2.com/cgi/wiki?TellDontAsk 
 http://c2.com/cgi/wiki?CanLawOfDemeterBeRefactoredAutomatically // bullshit
@@ -158,6 +158,8 @@ http://don.fed.wiki.org/view/law-of-demeter/sfw.c2.com/law-of-demeter-revisited
 
 Do fluent interfaces violate the Law of Demeter - applies to Javascript as well
 http://stackoverflow.com/questions/67561/do-fluent-interfaces-violate-the-law-of-demeter
+
+http://wiki.tcl.tk/8505
 
 ### JavaScript links
 
@@ -241,6 +243,7 @@ http://www.ericfeminella.com/blog/2008/02/02/principle-of-least-knowledge/
 http://www.blackwasp.co.uk/LawOfDemeter.aspx
 http://eyalgo.com/2014/02/17/law-of-demeter-4/
 http://theshyam.com/tag/law-of-demeter/
+http://www.javacodegeeks.com/2012/06/demeter-law.html
 
 ### Not just demeter
 http://www.bennadel.com/blog/2375-object-calisthenics-in-javascript-my-first-attempt.htm
@@ -279,3 +282,8 @@ http://www.scottmcmaster365.com/2011/04/law-of-demeter-makes-you-create-mock.htm
 http://stackoverflow.com/questions/19549535/intellij-ideas-law-of-demeter-inspection-false-positive-or-not
 https://code.google.com/p/testability-explorer/wiki/LawOfDemeterCostExplanation
 http://blog.bbv.ch/2011/03/28/law-of-demeter-and-testability/
+
+## LoD for namespaces and data objects
+http://stackoverflow.com/questions/12284057/law-of-demeter-data-objects
+http://codereview.stackexchange.com/questions/131/law-of-demeter-and-data-models
+

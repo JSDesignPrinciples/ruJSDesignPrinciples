@@ -81,6 +81,53 @@ utils.measurments.size( something )
 
 -------
 
+# Example with a paper boy and a wallet
+## Original
+```javascript
+function Wallet( money ){
+    this.money = money;
+}
+
+Wallet.prototype.getMoney = function( amount ){
+    // get the money
+}
+
+function Customer( wallet, name ){ 
+    this.wallet = wallet
+    this.name = name;
+}
+Customer.prototype.getWallet = function(){
+  return this.wallet;
+}
+
+function PaperBoy(){
+   
+}
+
+PaperBoy.prototype.acceptPayment = function( customer ){
+    customer.getWallet().getMoney(); // LOD broken
+}
+## Solution 1
+```
+Customer.prototype.getMoney = function( amount ){
+  return this.wallet.getMoney( amount )
+}
+```
+Плюсы: 
+* PaperBoy is decoupled from the wallet class 
+* PaperBoy con not do bad things with the wallet
+Минусы: 
+* Если делать так часто, слишком много методов будет у кастомера.
+
+## Solution 2  
+
+PaperBoy.prototype.acceptPayment = function( wallet ){
+    wallet.getMoney(); 
+}
+Плюсы: 
+* PaperBoy ничего не знает про кастомера
+// TODO подрбнее  и больше примеров 
+
 # Ссылки и прочие материалы для подготовки статьи
  
  
@@ -139,10 +186,10 @@ http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/de
  http://c2.com/cgi/wiki?LawOfDemeterMakesUnitTestsEasier
 http://c2.com/cgi/wiki?LawOfDemeterIsHardToUnderstand 
 http://c2.com/cgi/wiki?LawOfDemeterIsTooRestrictive // see "How to apply the LawOfDemeter successfully"
- ---- Finished here
 http://c2.com/cgi/wiki?LawOfDemeterAndCoupling
-http://c2.com/cgi/wiki?TellDontAsk 
 http://c2.com/cgi/wiki?CanLawOfDemeterBeRefactoredAutomatically // bullshit
+ ---- Finished here
+http://c2.com/cgi/wiki?TellDontAsk 
 
 Really nice presenation, great research, Java examples, have to read
 http://www.slideshare.net/vladimirtsukur/law-of-demeter-objective-sense-of-style

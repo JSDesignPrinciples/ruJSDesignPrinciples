@@ -107,6 +107,7 @@ function PaperBoy(){
 PaperBoy.prototype.acceptPayment = function( customer ){
     customer.getWallet().getMoney(); // LOD broken
 }
+```
 ## Solution 1
 ```
 Customer.prototype.getMoney = function( amount ){

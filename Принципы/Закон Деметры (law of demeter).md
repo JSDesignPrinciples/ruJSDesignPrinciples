@@ -132,6 +132,22 @@ PaperBoy.prototype.acceptPayment = function( wallet ){
 Плюсы: 
 * PaperBoy ничего не знает про кастомера
 // TODO подрбнее  и больше примеров 
+## Solution 3  
+
+```Javacript
+var paymentService = {
+    processPayment: function( fromWallet, toWallet, amount){
+        // do the payment
+    }
+}
+
+PaperBoy.prototype.acceptPayment = function( customer ){
+    paymentService.processService( customer.wallet ); 
+}
+```
+Плюсы: 
+
+// TODO подрбнее  и больше примеров 
 
 # Ссылки и прочие материалы для подготовки статьи
  

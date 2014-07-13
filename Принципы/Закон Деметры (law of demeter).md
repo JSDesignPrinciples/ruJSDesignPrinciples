@@ -211,6 +211,10 @@ http://erlang.org/pipermail/erlang-questions/2013-January/071991.html
 
 Some PHP examples
 http://www.sitepoint.com/introduction-to-the-law-of-demeter/
+http://www.theodo.fr/blog/2013/02/dont-overuse-dependency-injection/
+
+Python 
+https://mail.python.org/pipermail/python-list/2002-December/152685.html
 
 Money And Wallet methaphor
 http://juristr.com/blog/2009/09/law-of-demeter-nice-metaphor/

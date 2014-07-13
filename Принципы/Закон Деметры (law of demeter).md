@@ -83,7 +83,7 @@ utils.measurments.size( something )
 
 # Example with a paper boy and a wallet
 ## Original
-```javascript
+```Javacript
 function Wallet( money ){
     this.money = money;
 }
@@ -108,8 +108,10 @@ PaperBoy.prototype.acceptPayment = function( customer ){
     customer.getWallet().getMoney(); // LOD broken
 }
 ```
+
 ## Solution 1
-```
+
+```Javacript
 Customer.prototype.getMoney = function( amount ){
   return this.wallet.getMoney( amount )
 }
@@ -122,9 +124,11 @@ Customer.prototype.getMoney = function( amount ){
 
 ## Solution 2  
 
+```Javacript
 PaperBoy.prototype.acceptPayment = function( wallet ){
     wallet.getMoney(); 
 }
+```
 Плюсы: 
 * PaperBoy ничего не знает про кастомера
 // TODO подрбнее  и больше примеров 

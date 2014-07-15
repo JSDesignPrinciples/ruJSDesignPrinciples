@@ -113,7 +113,11 @@ PaperBoy.prototype.acceptPayment = function( customer ){
     // LOD broken
 }
 ```
-
+Что здесь не так, и почему это нужно исправлять?
+1. Если нужно будет добавить кредитную карточку, то будет геморрой
+2. Если появится кто-то еще, кто хочет получить деньги с клиента, придется дублировать код с проверками
+3. Клиент позволяет любому классу управлять свои коешльком, что не всегда желательно
+4. TODO
 ## Solution 1
 
 ```Javacript
@@ -171,7 +175,7 @@ PaperBoy.prototype.acceptPayment = function( customer ){
 * Определен ли закон на уровне функии или на уровне класса?
 * Массивы объектов - исключение из правила
 * How is this at all related to bridge and shield patterns?
-
+* Domain specific objects only?
 
 ## Цитаты
 , it's a guidline to help reduce coupling in code

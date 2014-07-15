@@ -81,7 +81,10 @@ utils.measurments.size( something )
 
 -------
 # Example with Order.Client.name
-// TODO
+Возможное решение: 
+order.clientName
+Минусы: нужно делегировать каждое свойство
+Плюсы : Если какой-то свойство перенесется, шаблоны менять не нужно
 # Example with a paper boy and a wallet
 ## Original
 ```Javacript
@@ -176,6 +179,7 @@ PaperBoy.prototype.acceptPayment = function( customer ){
 * Массивы объектов - исключение из правила
 * How is this at all related to bridge and shield patterns?
 * Domain specific objects only?
+* Coffee script has a ? operator, talk about it and LoD # http://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/ 
 
 ## Цитаты
 , it's a guidline to help reduce coupling in code

@@ -80,7 +80,8 @@ utils.measurments.size( something )
 
 
 -------
-
+# Example with Order.Client.name
+// TODO
 # Example with a paper boy and a wallet
 ## Original
 ```Javacript
@@ -105,7 +106,11 @@ function PaperBoy(){
 }
 
 PaperBoy.prototype.acceptPayment = function( customer ){
-    customer.getWallet().getMoney(); // LOD broken
+    var wallet = customer.getWallet(); 
+    if( wallet.hasMoney( amount ) ){
+        wallet.getMoney( amount );
+    }
+    // LOD broken
 }
 ```
 

@@ -1,4 +1,4 @@
-# Low of demeter
+# Law of demeter
 a specific case of loose coupling.
 ## Примерная схема
 ### Краткое описание и как понять что закон нарушен

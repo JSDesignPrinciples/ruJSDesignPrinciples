@@ -279,7 +279,7 @@ original article about law of demeter
 http://www.ccs.neu.edu/research/demeter/papers/law-of-demeter/oopsla88-law-of-demeter.pdf
 
 Weird stuff
-http://www.daedtech.com/visualization-mnemonics-for-software-principles
+http://www.daedtech.com/visualization-mnemonics-for-software-principles # Some ridiculous example on handling pants instead of wallet 
 
 Ruby examples + some discussion 
 http://devblog.avdi.org/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/

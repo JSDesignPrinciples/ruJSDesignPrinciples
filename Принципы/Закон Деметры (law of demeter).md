@@ -45,6 +45,7 @@ http://en.wikipedia.org/wiki/Multilayered_architecture
 * проще тестировать, потом что не надо создавать вложенные моки
 * Меньше всего менять (объснить)
 * Посволяет избавиться от ошибок, когда внешний класс не в курсе, что внутренний класс был изменен
+* Возможно меньше печатать
 http://alvinalexander.com/java/java-law-of-demeter-java-examples
 
 ### Минусы  
@@ -200,6 +201,8 @@ The Demeter literature talks about the introduction of <b>lots</b> of additional
 This gets into issues of propagation of results of partial computations, which is a whole other area of Demeter called "propagation patterns" (not be confused with "design patterns"). Beyond the straightforward stuff, trying to go "full" Demeter without the niceties of the "full" Demeter system has lots of not niceties" associated with it because without Demeter's tool-support you can't so easily propagate what is needed where in an orthogonal fashion. -- [[Anonymous Donor]]
 
  had the opportunity to briefly chat with Michael Feathers about LoD and he pointed out the example of Excel’s object model for tables and cells. If LoD is about encapsulation (aka information hiding) then why would you hide the structure of an object where the structure is exactly what people are interested in and unlikely to change?
+ 
+ Software design principles can be interesting to study in the abstract, but there is no substitute for trying them out in concrete applications. If you can find a project that is a natural fit for the technique you are trying to investigate, even the most simple toy application will teach you more than pure thought experiments ever could.
 ## Мысли
 ### Статический анализ
  В языке со статической типизацией можно выяснить, какие классы знают о других классах
@@ -281,10 +284,14 @@ http://www.ccs.neu.edu/research/demeter/papers/law-of-demeter/oopsla88-law-of-de
 Weird stuff
 http://www.daedtech.com/visualization-mnemonics-for-software-principles # Some ridiculous example on handling pants instead of wallet 
 
+ 
+
+
 Ruby examples + some discussion 
 http://devblog.avdi.org/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/
-http://guillecarlos.com/refactoring-law-of-demeter.html
-https://practicingruby.com/articles/temporal-coupling-and-the-law-of-demeter
+http://guillecarlos.com/refactoring-law-of-demeter.html # Some ruby refactoring from really ugly code to just ugly code
+https://practicingruby.com/articles/temporal-coupling-and-the-law-of-demeter # A very hardcore version of demeter law applied to some async thing in ruby. worth revisiting
+https://sites.google.com/site/unclebobconsultingllc/active-record-vs-objects # Link from the previous post
 http://programmers.stackexchange.com/questions/214721/rails-law-of-demeter-confusion
 http://rails-bestpractices.com/posts/15-the-law-of-demeter
 http://www.informit.com/articles/article.aspx?p=1834700&seqNum=6

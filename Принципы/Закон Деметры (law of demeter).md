@@ -203,6 +203,8 @@ This gets into issues of propagation of results of partial computations, which i
  had the opportunity to briefly chat with Michael Feathers about LoD and he pointed out the example of Excel’s object model for tables and cells. If LoD is about encapsulation (aka information hiding) then why would you hide the structure of an object where the structure is exactly what people are interested in and unlikely to change?
  
  Software design principles can be interesting to study in the abstract, but there is no substitute for trying them out in concrete applications. If you can find a project that is a natural fit for the technique you are trying to investigate, even the most simple toy application will teach you more than pure thought experiments ever could.
+ 
+ I think applying the Law of Demeter to individual classes is taking it a bit too far. I think a better application is to apply it to layers in your code. For example, your business logic layer shouldn't need to access anything about the HTTP context, and your data access layer shouldn't need to access anything in the presentation layer.
 ## Мысли
 ### Статический анализ
  В языке со статической типизацией можно выяснить, какие классы знают о других классах
@@ -242,7 +244,7 @@ http://www.ccs.neu.edu/home/lieber/LoD.html // TODO: Read more carefully, good m
 
 How does the Law of Demeter apply to object-oriented systems regarding coupling and cohesion? [closed]
 http://programmers.stackexchange.com/questions/214721/rails-law-of-demeter-confusion
-http://stackoverflow.com/questions/6918666/law-of-demeter-and-oop-confusion
+http://stackoverflow.com/questions/6918666/law-of-demeter-and-oop-confusion # Good point, answers are not helpful
 
 some of the pretty old stuff
 http://don.fed.wiki.org/view/law-of-demeter/sfw.c2.com/law-of-demeter-revisited
@@ -380,6 +382,8 @@ http://www.scottmcmaster365.com/2011/04/law-of-demeter-makes-you-create-mock.htm
 http://stackoverflow.com/questions/19549535/intellij-ideas-law-of-demeter-inspection-false-positive-or-not
 https://code.google.com/p/testability-explorer/wiki/LawOfDemeterCostExplanation
 http://blog.bbv.ch/2011/03/28/law-of-demeter-and-testability/
+http://blog.igorstoyanov.com/2005/10/stubs-or-mocks-state-or-behavior_30.html
+https://groups.yahoo.com/neo/groups/extremeprogramming/conversations/topics/122627
 
 ## LoD for namespaces and data objects
 http://stackoverflow.com/questions/12284057/law-of-demeter-data-objects
@@ -389,3 +393,11 @@ http://codereview.stackexchange.com/questions/131/law-of-demeter-and-data-models
 An Empirical Validation of the Beneﬁts of
 Adhering to the Law of Demeter
 http://www.ccs.neu.edu/home/lieber/LoD/LoD-2011-Zurich.pdf
+
+# Coupling and cohesion
+http://msdn.microsoft.com/en-us/magazine/cc947917.aspx
+http://stackoverflow.com/questions/163071/coupling-cohesion-and-the-law-of-demeter
+
+# TO SORT
+http://theknowledge.me.uk/mywiki/concepts/law-of-demeter.html
+http://blog.shutupandcode.net/?p=718

@@ -415,6 +415,10 @@ https://www.youtube.com/watch?v=RlfLCWKxHJ0
 Misko Hever - Design Tech Talk Series Presents: OO Design for Testability
 https://www.youtube.com/watch?v=acjvKJiOvXw
 
+The talk by Ben Orenstein at RailsConf 2013 provides a very good visualization of the Law of Demeter. 
+Ben Orenstein - Rails Conf 2013 How to Talk to Developers 
+https://www.youtube.com/watch?v=l9JXH7JPjR4
+
 # Coupling and cohesion
 http://msdn.microsoft.com/en-us/magazine/cc947917.aspx
 http://stackoverflow.com/questions/163071/coupling-cohesion-and-the-law-of-demeter

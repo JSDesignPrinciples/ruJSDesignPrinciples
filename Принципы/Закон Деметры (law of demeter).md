@@ -408,6 +408,12 @@ In 2003/2004 the Law of Demeter was revisited for Karl Lieberherr's ICSE 2004 ke
 http://www.ccs.neu.edu/research/demeter/biblio/icse-2004-keynote.html
 http://www.ccs.neu.edu/research/demeter/papers/icse-04-keynote/ICSE2004.pdf
 
+http://www.ccs.neu.edu/research/demeter/biblio/LoD.html
+
+http://www.ccs.neu.edu/research/demeter/biblio/LoD-formulations.html
+
+And tons of articles here: http://www.ccs.neu.edu/research/demeter/biblio/
+
 ## Talks
 Misko Hever - The Clean Code Talks - Don't Look For Things!
 https://www.youtube.com/watch?v=RlfLCWKxHJ0

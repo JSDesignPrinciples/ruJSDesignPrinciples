@@ -217,10 +217,11 @@ This gets into issues of propagation of results of partial computations, which i
  
 
 ### Вариации 
-## LoDC
+#### LoDC
 in 2003/2004 the Law of Demeter was revisited for Karl Lieberherr's ICSE 2004 keynote paper and presentation. The Law of Demeter was refined from "Only talk to your friends" to "Only talk to your friends who share your concerns" and this refined form is called the Law of Demeter for Concerns (LoDC). The LoDC is best followed by using Aspect-Oriented Software Development (AOSD) techniques such as AspectJ or DJ. On the other hand, the LoDC leads to better AOSD. Properly following the LoDC has two key benefits: It leads to better information hiding (using the technique of structure-shyness or the more general technique of concern-shyness) and to less information overload for the software developer.
 
-
+#### No returns  
+https://practicingruby.com/articles/temporal-coupling-and-the-law-of-demeter # A very hardcore version of demeter law applied to some async thing in ruby. worth revisiting
 
 ## Links
 ### General links
@@ -298,7 +299,7 @@ http://www.daedtech.com/visualization-mnemonics-for-software-principles # Some r
 Ruby examples + some discussion 
 http://devblog.avdi.org/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/
 http://guillecarlos.com/refactoring-law-of-demeter.html # Some ruby refactoring from really ugly code to just ugly code
-https://practicingruby.com/articles/temporal-coupling-and-the-law-of-demeter # A very hardcore version of demeter law applied to some async thing in ruby. worth revisiting
+
 https://sites.google.com/site/unclebobconsultingllc/active-record-vs-objects # Link from the previous post
 http://programmers.stackexchange.com/questions/214721/rails-law-of-demeter-confusion
 http://rails-bestpractices.com/posts/15-the-law-of-demeter

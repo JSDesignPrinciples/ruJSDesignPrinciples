@@ -396,6 +396,10 @@ An Empirical Validation of the Beneﬁts of
 Adhering to the Law of Demeter
 http://www.ccs.neu.edu/home/lieber/LoD/LoD-2011-Zurich.pdf
 
+#In 2003/2004 the Law of Demeter was revisited for Karl Lieberherr's ICSE 2004 keynote paper and presentation. The Law of Demeter was refined from "Only talk to your friends" to "Only talk to your friends who share your concerns" and this refined form is called the Law of Demeter for Concerns (LoDC). 
+http://www.ccs.neu.edu/research/demeter/biblio/icse-2004-keynote.html
+http://www.ccs.neu.edu/research/demeter/papers/icse-04-keynote/ICSE2004.pdf
+
 # Coupling and cohesion
 http://msdn.microsoft.com/en-us/magazine/cc947917.aspx
 http://stackoverflow.com/questions/163071/coupling-cohesion-and-the-law-of-demeter

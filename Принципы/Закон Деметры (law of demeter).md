@@ -432,6 +432,9 @@ https://www.youtube.com/watch?v=l9JXH7JPjR4
 Really nice presenation, great research, Java examples, have to read
 http://www.slideshare.net/vladimirtsukur/law-of-demeter-objective-sense-of-style
 
+Coupling_Cohesion_and_the_Law_of_Demeter
+http://www.powershow.com/view1/5e4cb-ZDc1Z/Coupling_Cohesion_and_the_Law_of_Demeter_powerpoint_ppt_presentation
+
 # Coupling and cohesion
 http://msdn.microsoft.com/en-us/magazine/cc947917.aspx
 http://stackoverflow.com/questions/163071/coupling-cohesion-and-the-law-of-demeter

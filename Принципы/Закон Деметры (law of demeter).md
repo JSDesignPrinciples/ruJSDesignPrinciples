@@ -392,6 +392,9 @@ http://blog.bbv.ch/2011/03/28/law-of-demeter-and-testability/
 http://blog.igorstoyanov.com/2005/10/stubs-or-mocks-state-or-behavior_30.html
 https://groups.yahoo.com/neo/groups/extremeprogramming/conversations/topics/122627
 
+Google's Testing on the Toilet, whatever it means
+http://www.ccs.neu.edu/home/lieber/LoD/law_of_demeter_healthy_code-external.pdf
+
 ## LoD for namespaces and data objects
 http://stackoverflow.com/questions/12284057/law-of-demeter-data-objects
 http://codereview.stackexchange.com/questions/131/law-of-demeter-and-data-models

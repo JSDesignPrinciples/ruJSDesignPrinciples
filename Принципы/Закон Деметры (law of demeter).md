@@ -205,6 +205,8 @@ This gets into issues of propagation of results of partial computations, which i
  Software design principles can be interesting to study in the abstract, but there is no substitute for trying them out in concrete applications. If you can find a project that is a natural fit for the technique you are trying to investigate, even the most simple toy application will teach you more than pure thought experiments ever could.
  
  I think applying the Law of Demeter to individual classes is taking it a bit too far. I think a better application is to apply it to layers in your code. For example, your business logic layer shouldn't need to access anything about the HTTP context, and your data access layer shouldn't need to access anything in the presentation layer.
+ 
+ The style rule was first proposed at Northeastern University in the fall of 1987 by Ian Holland and popularized in books by Booch, Budd, Coleman, Larman, Page-Jones, Rumbaugh and others. A
 ## Мысли
 ### Статический анализ
  В языке со статической типизацией можно выяснить, какие классы знают о других классах

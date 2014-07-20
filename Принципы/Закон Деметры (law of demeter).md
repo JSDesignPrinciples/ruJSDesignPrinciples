@@ -406,8 +406,11 @@ http://www.ccs.neu.edu/research/demeter/biblio/icse-2004-keynote.html
 http://www.ccs.neu.edu/research/demeter/papers/icse-04-keynote/ICSE2004.pdf
 
 ## Talks
-Miskov Hever - The Clean Code Talks - Don't Look For Things!
+Misko Hever - The Clean Code Talks - Don't Look For Things!
 https://www.youtube.com/watch?v=RlfLCWKxHJ0
+
+Misko Hever - Design Tech Talk Series Presents: OO Design for Testability
+https://www.youtube.com/watch?v=acjvKJiOvXw
 
 # Coupling and cohesion
 http://msdn.microsoft.com/en-us/magazine/cc947917.aspx

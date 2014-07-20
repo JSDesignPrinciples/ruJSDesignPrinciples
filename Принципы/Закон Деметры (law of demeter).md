@@ -242,13 +242,12 @@ http://c2.com/cgi/wiki?LawOfDemeterAndCoupling
 http://c2.com/cgi/wiki?CanLawOfDemeterBeRefactoredAutomatically // bullshit
 http://c2.com/cgi/wiki?TellDontAsk 
 
-Really nice presenation, great research, Java examples, have to read
-http://www.slideshare.net/vladimirtsukur/law-of-demeter-objective-sense-of-style
 
- ---- Finished here
+
 Really nice collection of links 
 http://www.ccs.neu.edu/home/lieber/LoD.html // TODO: Read more carefully, good material in the presentation
 
+ ---- Finished here
 How does the Law of Demeter apply to object-oriented systems regarding coupling and cohesion? [closed]
 http://programmers.stackexchange.com/questions/214721/rails-law-of-demeter-confusion
 http://stackoverflow.com/questions/6918666/law-of-demeter-and-oop-confusion # Good point, answers are not helpful
@@ -260,6 +259,9 @@ Do fluent interfaces violate the Law of Demeter - applies to Javascript as well
 http://stackoverflow.com/questions/67561/do-fluent-interfaces-violate-the-law-of-demeter
 
 http://wiki.tcl.tk/8505
+
+Collection of links
+http://www.ccs.neu.edu/home/lieber/LoD/general
 
 ### JavaScript links
 
@@ -414,6 +416,8 @@ http://www.ccs.neu.edu/research/demeter/biblio/LoD-formulations.html
 
 And tons of articles here: http://www.ccs.neu.edu/research/demeter/biblio/
 
+Brad Appleton Explains Law of Demeter and Adaptive Programming
+http://www.bradapp.com/docs/demeter-intro.html
 ## Talks
 Misko Hever - The Clean Code Talks - Don't Look For Things!
 https://www.youtube.com/watch?v=RlfLCWKxHJ0
@@ -425,6 +429,9 @@ The talk by Ben Orenstein at RailsConf 2013 provides a very good visualization o
 Ben Orenstein - Rails Conf 2013 How to Talk to Developers 
 https://www.youtube.com/watch?v=l9JXH7JPjR4
 
+Really nice presenation, great research, Java examples, have to read
+http://www.slideshare.net/vladimirtsukur/law-of-demeter-objective-sense-of-style
+
 # Coupling and cohesion
 http://msdn.microsoft.com/en-us/magazine/cc947917.aspx
 http://stackoverflow.com/questions/163071/coupling-cohesion-and-the-law-of-demeter
@@ -432,3 +439,27 @@ http://stackoverflow.com/questions/163071/coupling-cohesion-and-the-law-of-demet
 # TO SORT
 http://theknowledge.me.uk/mywiki/concepts/law-of-demeter.html
 http://blog.shutupandcode.net/?p=718
+
+Static versus dynamic analysis applied to LoD
+http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/static-dynamic.html
+
+http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/Smyth/
+
+Law of Demeter confirmed by experiment at University of Maryland
+http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/LawOfDemeter-confirmed-by-experiments.txt
+
+Limitations of Data Encapsulation
+http://www.ccs.neu.edu/research/demeter/related-work/paul-bergstein/lawOfDemeter
+
+
+Discussions of Law of Demeter and Adaptive Programming
+http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/
+
+Discussions of Law of Demeter for Socrates and AspectJ
+http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/socrates
+
+Law of Demeter confirmed by experiment
+http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/socrates
+
+Publications by Demeter Group, including LoD papers from the late 80's
+http://www.ccs.neu.edu/research/demeter/papers/publications.html

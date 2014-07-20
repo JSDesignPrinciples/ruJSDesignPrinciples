@@ -405,6 +405,10 @@ In 2003/2004 the Law of Demeter was revisited for Karl Lieberherr's ICSE 2004 ke
 http://www.ccs.neu.edu/research/demeter/biblio/icse-2004-keynote.html
 http://www.ccs.neu.edu/research/demeter/papers/icse-04-keynote/ICSE2004.pdf
 
+## Talks
+Miskov Hever - The Clean Code Talks - Don't Look For Things!
+https://www.youtube.com/watch?v=RlfLCWKxHJ0
+
 # Coupling and cohesion
 http://msdn.microsoft.com/en-us/magazine/cc947917.aspx
 http://stackoverflow.com/questions/163071/coupling-cohesion-and-the-law-of-demeter

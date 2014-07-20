@@ -216,6 +216,10 @@ This gets into issues of propagation of results of partial computations, which i
   http://www.ccs.neu.edu/research/demeter/DemeterF/
  
 
+### Вариации 
+## LoDC
+in 2003/2004 the Law of Demeter was revisited for Karl Lieberherr's ICSE 2004 keynote paper and presentation. The Law of Demeter was refined from "Only talk to your friends" to "Only talk to your friends who share your concerns" and this refined form is called the Law of Demeter for Concerns (LoDC). The LoDC is best followed by using Aspect-Oriented Software Development (AOSD) techniques such as AspectJ or DJ. On the other hand, the LoDC leads to better AOSD. Properly following the LoDC has two key benefits: It leads to better information hiding (using the technique of structure-shyness or the more general technique of concern-shyness) and to less information overload for the software developer.
+
 
 
 ## Links

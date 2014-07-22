@@ -247,10 +247,12 @@ http://c2.com/cgi/wiki?TellDontAsk
 Really nice collection of links 
 http://www.ccs.neu.edu/home/lieber/LoD.html // TODO: Read more carefully, good material in the presentation
 
- ---- Finished here
 How does the Law of Demeter apply to object-oriented systems regarding coupling and cohesion? [closed]
+http://programmers.stackexchange.com/questions/181699/how-does-the-law-of-demeter-apply-to-object-oriented-systems-regarding-coupling
+
 http://programmers.stackexchange.com/questions/214721/rails-law-of-demeter-confusion
 http://stackoverflow.com/questions/6918666/law-of-demeter-and-oop-confusion # Good point, answers are not helpful
+ ---- Finished here
 
 some of the pretty old stuff
 http://don.fed.wiki.org/view/law-of-demeter/sfw.c2.com/law-of-demeter-revisited

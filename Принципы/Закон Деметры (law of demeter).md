@@ -252,14 +252,15 @@ http://programmers.stackexchange.com/questions/181699/how-does-the-law-of-demete
 
 http://programmers.stackexchange.com/questions/214721/rails-law-of-demeter-confusion
 http://stackoverflow.com/questions/6918666/law-of-demeter-and-oop-confusion # Good point, answers are not helpful
- ---- Finished here
 
-some of the pretty old stuff
+A lot of arguing, worth revisiting
 http://don.fed.wiki.org/view/law-of-demeter/sfw.c2.com/law-of-demeter-revisited
 
-Do fluent interfaces violate the Law of Demeter - applies to Javascript as well
+Several takes on explaining why chaining does not violate the law of Demeter
 http://stackoverflow.com/questions/67561/do-fluent-interfaces-violate-the-law-of-demeter
 
+ ---- Finished here
+Law of demeter applied to TCL programming language
 http://wiki.tcl.tk/8505
 
 Collection of links

@@ -259,12 +259,17 @@ http://don.fed.wiki.org/view/law-of-demeter/sfw.c2.com/law-of-demeter-revisited
 Several takes on explaining why chaining does not violate the law of Demeter
 http://stackoverflow.com/questions/67561/do-fluent-interfaces-violate-the-law-of-demeter
 
- ---- Finished here
 Law of demeter applied to TCL programming language
 http://wiki.tcl.tk/8505
 
-Collection of links
-http://www.ccs.neu.edu/home/lieber/LoD/general
+http://codemate.wordpress.com/2008/08/09/looking-at-the-law-of-demeter/
+
+ ---- Finished here
+http://web.archive.org/web/20110717132001/http://garmhold.blogspot.com/2010/02/no-more-russian-dolls-applying-law-of.html
+
+
+http://www.driis.dk/en/2010/01.aspx
+
 
 ### JavaScript links
 

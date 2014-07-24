@@ -60,6 +60,7 @@ todo: The LawOfDemeter minimizes logical coupling, but maximizes what could be c
 
 #### Чистый JavaScript
 Как это работает в JS
+Если в других языках можно как-то отрефакторит, то в JS не очень
 
 #### Чейнинг в underscore | jquery
 Нарушает ли принцип деметры?

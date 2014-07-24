@@ -208,6 +208,8 @@ This gets into issues of propagation of results of partial computations, which i
  I think applying the Law of Demeter to individual classes is taking it a bit too far. I think a better application is to apply it to layers in your code. For example, your business logic layer shouldn't need to access anything about the HTTP context, and your data access layer shouldn't need to access anything in the presentation layer.
  
  The style rule was first proposed at Northeastern University in the fall of 1987 by Ian Holland and popularized in books by Booch, Budd, Coleman, Larman, Page-Jones, Rumbaugh and others. A
+ 
+ No more russian dolls
 ## Мысли
 ### Статический анализ
  В языке со статической типизацией можно выяснить, какие классы знают о других классах

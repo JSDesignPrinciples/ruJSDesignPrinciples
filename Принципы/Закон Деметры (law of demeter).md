@@ -54,7 +54,7 @@ http://alvinalexander.com/java/java-law-of-demeter-java-examples
 * Нарушает Narrow interfaces
 * Найти может быть довольно просто, но вот починить - не всегда, иногда пытаясь починить можно сделать еще хуже
 todo: The LawOfDemeter minimizes logical coupling, but maximizes what could be called "physical coupling" -- the number of instantiated objects that need to be traversed for any particular operation. There are specific reasons why this might be bad. If performance is an issue, you might not want to incur the costs of implicitly navigating through a bunch of objects every time you call a top-level method. (This can be counteracted by caching intermediate objects, though that might be cumbersome in practice.) Similar issues can occur when you're using multithreading or distributed systems, where physical indirection can cause problems.
-
+* Something about deep null checking
 ## Примеры
 Дальше мы пройдемся по примерам и для каждого посмотрим, даст ли применение ЗД обещанные выше плюсы, и удастсяли избежать минусов
 
@@ -267,12 +267,12 @@ http://wiki.tcl.tk/8505
 
 http://codemate.wordpress.com/2008/08/09/looking-at-the-law-of-demeter/
 
- ---- Finished here
 http://web.archive.org/web/20110717132001/http://garmhold.blogspot.com/2010/02/no-more-russian-dolls-applying-law-of.html
 
 
-http://www.driis.dk/en/2010/01.aspx
+http://web.archive.org/web/20100617233935/http://www.driis.dk/en/2010/01.aspx
 
+ ---- Finished here
 
 ### JavaScript links
 

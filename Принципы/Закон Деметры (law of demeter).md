@@ -181,7 +181,12 @@ PaperBoy.prototype.acceptPayment = function( customer ){
 * Массивы объектов - исключение из правила
 * How is this at all related to bridge and shield patterns?
 * Domain specific objects only?
-* Coffee script has a ? operator, talk about it and LoD # http://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/ 
+* Coffee script has a ? operator, talk about it and LoD # http://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/
+* Dependency injection?
+http://stackoverflow.com/questions/160032/does-dependency-injection-break-the-law-of-demeter
+http://stackoverflow.com/questions/791940/law-of-demeter-on-factory-pattern-and-dependency-injection
+http://blog.glassdiary.com/post/60056612233/law-of-demeter-in-software-design
+http://googletesting.blogspot.com/2008/10/dependency-injection-myth-reference.html
 
 ## Цитаты
 , it's a guidline to help reduce coupling in code
@@ -330,6 +335,7 @@ http://erlang.org/pipermail/erlang-questions/2013-January/071991.html
 Some PHP examples
 http://www.sitepoint.com/introduction-to-the-law-of-demeter/
 http://www.theodo.fr/blog/2013/02/dont-overuse-dependency-injection/
+http://codeutopia.net/blog/2011/08/02/doctrine-2-and-the-law-of-demeter/
 
 Python 
 https://mail.python.org/pipermail/python-list/2002-December/152685.html
@@ -342,7 +348,7 @@ http://lostechies.com/derekgreer/2008/06/10/distilling-law-of-demeter/
 http://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/
 http://taswar.zeytinsoft.com/2009/04/03/law-of-demeter-principle-of-least-knowledge/
 http://fusion.dominicwatson.co.uk/2012/07/the-law-of-demeter.html
-
+http://www.prowareness.com/blog/hidedelagate/
 
 Law of Demeter is easy to spot when you need extra mocks
 http://richarddingwall.name/2009/08/26/law-of-demeter-is-easy-to-spot-when-you-need-extra-mocks/
@@ -446,6 +452,9 @@ http://www.slideshare.net/vladimirtsukur/law-of-demeter-objective-sense-of-style
 Coupling_Cohesion_and_the_Law_of_Demeter
 http://www.powershow.com/view1/5e4cb-ZDc1Z/Coupling_Cohesion_and_the_Law_of_Demeter_powerpoint_ppt_presentation
 
+Derek Ling, some JS examples
+http://prezi.com/lid1d64oqznb/law-of-demeter-presentation/
+
 # Coupling and cohesion
 http://msdn.microsoft.com/en-us/magazine/cc947917.aspx
 http://stackoverflow.com/questions/163071/coupling-cohesion-and-the-law-of-demeter
@@ -480,3 +489,35 @@ http://www.ccs.neu.edu/research/demeter/papers/publications.html
 
 Potential violation of Law of Demeter
 http://coding.tocea.com/tools/pmd/lawofdemeter/
+
+Dependency Injection and Reference Passing
+http://blog.pdark.de/tag/law-of-demeter/
+
+
+http://tech.jonathangardner.net/wiki/Law_of_Demeter
+
+http://tech.socialchorus.com/2013/01/01/refactoring-and-the-null-object-pattern.html
+
+http://blogs.lessthandot.com/index.php/architect/designingsoftware/the-law-of-demeter/
+
+http://t-a-w.blogspot.com/2008/07/new-law-of-demeter.html
+
+http://code.scottshipp.com/2013/03/29/a-practical-example-of-the-benefits-of-the-law-of-demeter/
+
+http://www.captaindebug.com/2011/03/law-of-demeter.html
+
+http://www.codersgrid.com/2013/07/17/soma-js-framework/
+
+http://pivotallabs.com/the-law-of-demeter-is-a-piffle/
+
+http://compositecode.com/2007/06/21/law-of-demeter-tip-o-the-day/
+
+http://www.markhneedham.com/blog/2009/08/17/law-of-demeter-some-thoughts/
+
+http://ablogaboutcode.com/2012/02/27/understanding-the-law-of-demeter/
+
+http://stackoverflow.com/questions/468615/how-to-solve-the-violations-of-the-law-of-demeter
+
+http://stackoverflow.com/questions/484469/when-is-it-ok-to-break-the-law-of-demeter
+
+http://board.phpbuilder.com/showthread.php?10390605-Method-Chaining-Poor-OOP-practice

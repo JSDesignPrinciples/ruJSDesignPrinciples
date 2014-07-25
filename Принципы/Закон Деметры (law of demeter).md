@@ -477,3 +477,6 @@ http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/socrates
 
 Publications by Demeter Group, including LoD papers from the late 80's
 http://www.ccs.neu.edu/research/demeter/papers/publications.html
+
+Potential violation of Law of Demeter
+http://coding.tocea.com/tools/pmd/lawofdemeter/

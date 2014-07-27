@@ -182,6 +182,7 @@ PaperBoy.prototype.acceptPayment = function( customer ){
 * How is this at all related to bridge and shield patterns?
 * Domain specific objects only?
 * Coffee script has a ? operator, talk about it and LoD # http://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/
+* Нельзя починить нарушение закона какими-то внутренними изменениями 
 * Dependency injection?
 http://stackoverflow.com/questions/160032/does-dependency-injection-break-the-law-of-demeter
 http://stackoverflow.com/questions/791940/law-of-demeter-on-factory-pattern-and-dependency-injection
@@ -215,6 +216,8 @@ This gets into issues of propagation of results of partial computations, which i
  The style rule was first proposed at Northeastern University in the fall of 1987 by Ian Holland and popularized in books by Booch, Budd, Coleman, Larman, Page-Jones, Rumbaugh and others. A
  
  No more russian dolls
+ 
+ Unfortunately, when you simplify Demeter from "don't rely on behavior on internals of other objects" to "don't use more than one dot", you lose this critical thinking on context. (Applies to anything)
 ## Мысли
 ### Статический анализ
  В языке со статической типизацией можно выяснить, какие классы знают о других классах
@@ -243,7 +246,7 @@ http://c2.com/cgi/wiki?IsLawOfDemeterOverspecifiedOnCeeTwo
 
 Хорошая статья, все отлично расписано, возможно - первоисточник примера с кошельком
 http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/demeter.pdf
- http://c2.com/cgi/wiki?LawOfDemeterMakesUnitTestsEasier
+http://c2.com/cgi/wiki?LawOfDemeterMakesUnitTestsEasier
 http://c2.com/cgi/wiki?LawOfDemeterIsHardToUnderstand 
 http://c2.com/cgi/wiki?LawOfDemeterIsTooRestrictive // see "How to apply the LawOfDemeter successfully"
 http://c2.com/cgi/wiki?LawOfDemeterAndCoupling
@@ -277,15 +280,14 @@ http://web.archive.org/web/20110717132001/http://garmhold.blogspot.com/2010/02/n
 
 http://web.archive.org/web/20100617233935/http://www.driis.dk/en/2010/01.aspx
 
- ---- Finished here
+ 
 
 ### JavaScript links
 
 Promises and law of demeter:
 http://stackoverflow.com/questions/20275957/does-deferred-promise-promote-breaking-the-law-of-demeter
 
- Derick Bailey on LoD, see comments
-http://lostechies.com/derickbailey/2010/03/25/law-of-demeter-extension-methods-don-t-count/
+---- Finished here 
 
 Backbone and LoD
 http://zen-hacking.com/backbone-views-and-the-law-of-demeter/
@@ -349,6 +351,8 @@ http://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/
 http://taswar.zeytinsoft.com/2009/04/03/law-of-demeter-principle-of-least-knowledge/
 http://fusion.dominicwatson.co.uk/2012/07/the-law-of-demeter.html
 http://www.prowareness.com/blog/hidedelagate/
+Derick Bailey on LoD in C#, see comments
+http://lostechies.com/derickbailey/2010/03/25/law-of-demeter-extension-methods-don-t-count/
 
 Law of Demeter is easy to spot when you need extra mocks
 http://richarddingwall.name/2009/08/26/law-of-demeter-is-easy-to-spot-when-you-need-extra-mocks/

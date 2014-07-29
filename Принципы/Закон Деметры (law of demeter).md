@@ -183,6 +183,7 @@ PaperBoy.prototype.acceptPayment = function( customer ){
 * Domain specific objects only?
 * Coffee script has a ? operator, talk about it and LoD # http://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/
 * Нельзя починить нарушение закона какими-то внутренними изменениями 
+* CSS Selectors?
 * Dependency injection?
 http://stackoverflow.com/questions/160032/does-dependency-injection-break-the-law-of-demeter
 http://stackoverflow.com/questions/791940/law-of-demeter-on-factory-pattern-and-dependency-injection
@@ -218,6 +219,8 @@ This gets into issues of propagation of results of partial computations, which i
  No more russian dolls
  
  Unfortunately, when you simplify Demeter from "don't rely on behavior on internals of other objects" to "don't use more than one dot", you lose this critical thinking on context. (Applies to anything)
+ 
+ This is true.  I don't suppose you are, because if Kevin Bacon acted in a film with Kevin Bacon, and you acted with that copy of Kevin Bacon, you still have a Bacon number of 1.﻿# On chaining
 ## Мысли
 ### Статический анализ
  В языке со статической типизацией можно выяснить, какие классы знают о других классах
@@ -287,14 +290,14 @@ http://web.archive.org/web/20100617233935/http://www.driis.dk/en/2010/01.aspx
 Promises and law of demeter:
 http://stackoverflow.com/questions/20275957/does-deferred-promise-promote-breaking-the-law-of-demeter
 
----- Finished here 
 
-Backbone and LoD
+Really weird article on LoD, selectors nesting and backbone views
 http://zen-hacking.com/backbone-views-and-the-law-of-demeter/
 
-Nice generalization + some discussion
+Mostly flood about TDD 
 https://plus.google.com/+TadDonaghe/posts/jRvNenACand
 
+---- Finished here 
 Angular docs: Passing the injector breaks the Law of Demeter. 
 https://docs.angularjs.org/guide/di
 
@@ -326,6 +329,7 @@ http://rails-bestpractices.com/posts/15-the-law-of-demeter
 http://www.informit.com/articles/article.aspx?p=1834700&seqNum=6
 https://github.com/emerleite/demeter
 http://www.dan-manges.com/blog/37 # Good example on not just having properties out, but having the logic out, makes more sense
+http://nithinbekal.com/posts/demeter/
 
 "I've always felt I'd be more comfortable with the Law of Demeter if it were called the Suggestion of Demeter." Martin Fowler
 http://martinfowler.com/articles/mocksArentStubs.html
@@ -374,6 +378,7 @@ http://www.blackwasp.co.uk/LawOfDemeter.aspx
 http://eyalgo.com/2014/02/17/law-of-demeter-4/
 http://theshyam.com/tag/law-of-demeter/
 http://www.javacodegeeks.com/2012/06/demeter-law.html
+http://www.javacodegeeks.com/2014/02/law-of-demeter.html?utm_content=buffer4711e
 
 ### Not just demeter
 http://www.bennadel.com/blog/2375-object-calisthenics-in-javascript-my-first-attempt.htm
@@ -459,6 +464,7 @@ http://www.powershow.com/view1/5e4cb-ZDc1Z/Coupling_Cohesion_and_the_Law_of_Deme
 Derek Ling, some JS examples
 http://prezi.com/lid1d64oqznb/law-of-demeter-presentation/
 
+http://slides.nithinbekal.com/demeter/
 # Coupling and cohesion
 http://msdn.microsoft.com/en-us/magazine/cc947917.aspx
 http://stackoverflow.com/questions/163071/coupling-cohesion-and-the-law-of-demeter

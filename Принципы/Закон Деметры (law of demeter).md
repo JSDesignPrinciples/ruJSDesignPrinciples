@@ -190,6 +190,8 @@ http://stackoverflow.com/questions/791940/law-of-demeter-on-factory-pattern-and-
 http://blog.glassdiary.com/post/60056612233/law-of-demeter-in-software-design
 http://googletesting.blogspot.com/2008/10/dependency-injection-myth-reference.html
 
+The final thing I was going to say is that I like your observation about types being a big deal.  I know that, recently, when I am programming in a functional language, I'm constantly looking at the types and trying to find a kernel of uses of a type that make it easy to chain functions.  For example, if I have 3 functions which each take a different type and return the same type A, then I can use them as input to a chain. If I have functions which take an A to A, those can be part of the chain.  If I have a function which takes an A to a B and a function which takes a B to an A, I can chain those easily also.  It's sort of like `type attractors.'  I'd argue that when we make DSLs, they are good to the degree that we have those.
+
 ## Цитаты
 , it's a guidline to help reduce coupling in code
 
@@ -221,6 +223,10 @@ This gets into issues of propagation of results of partial computations, which i
  Unfortunately, when you simplify Demeter from "don't rely on behavior on internals of other objects" to "don't use more than one dot", you lose this critical thinking on context. (Applies to anything)
  
  This is true.  I don't suppose you are, because if Kevin Bacon acted in a film with Kevin Bacon, and you acted with that copy of Kevin Bacon, you still have a Bacon number of 1.﻿# On chaining
+ 
+ It’s important to understand that the Law of Demeter is a heuristic, not an end in and of itself. It is not a law in the sense that you “must” write your code in a certain way. Rather, it is a law in the sense that it has been consistently observed that if code complies with the Law of Demeter, it almost certainly has a number of the qualities—encapsulation, loose coupling, etc.—desirable in an OO system.
+ 
+  I just notice that often when Demeter is violated it takes some re-conceptualization of the problem and a completely different factoring of classes to make things much nicer.
 ## Мысли
 ### Статический анализ
  В языке со статической типизацией можно выяснить, какие классы знают о других классах
@@ -294,18 +300,17 @@ http://stackoverflow.com/questions/20275957/does-deferred-promise-promote-breaki
 Really weird article on LoD, selectors nesting and backbone views
 http://zen-hacking.com/backbone-views-and-the-law-of-demeter/
 
-Mostly flood about TDD 
+Mostly flood about TDD
 https://plus.google.com/+TadDonaghe/posts/jRvNenACand
 
----- Finished here 
-Angular docs: Passing the injector breaks the Law of Demeter. 
+Angular docs: Passing the injector breaks the Law of Demeter. # That's all about LoD on that page  
 https://docs.angularjs.org/guide/di
 
 Part of a Book: Dependency Injection with AngularJS (Holy shit, did not know this kind of book even exists)
 http://books.google.com/books?id=9dtdAgAAQBAJ&pg=PT61&lpg=PT61&dq=law+of+demeter+angular&source=bl&ots=AjDR10eAtM&sig=Lo3UjKIxgLtujsEl8L2doLChJwU&hl=en&sa=X&ei=FN-9U4KZE4yryASt8oLgCw&ved=0CC4Q6AEwAg#v=onepage&q=law%20of%20demeter%20angular&f=false
 
 Transfer injector broke The law of Demeter(Law of Demeter, Least knowledge principle)
-http://www.programering.com/a/MTO1EzMwATg.html
+http://www.programering.com/a/MTO1EzMwATg.html # Those people really screwed up trying to translate from english to english
 
 
 ### Other languages
@@ -319,8 +324,9 @@ http://www.daedtech.com/visualization-mnemonics-for-software-principles # Some r
  
 
 
+---- Finished here 
 Ruby examples + some discussion 
-http://devblog.avdi.org/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/
+http://devblog.avdi.org/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/ # Deep, Good examples, worth revisiting 
 http://guillecarlos.com/refactoring-law-of-demeter.html # Some ruby refactoring from really ugly code to just ugly code
 
 https://sites.google.com/site/unclebobconsultingllc/active-record-vs-objects # Link from the previous post

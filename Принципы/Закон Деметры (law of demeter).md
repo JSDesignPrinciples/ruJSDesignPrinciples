@@ -183,7 +183,7 @@ PaperBoy.prototype.acceptPayment = function( customer ){
 * Domain specific objects only?
 * Coffee script has a ? operator, talk about it and LoD # http://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/
 * Нельзя починить нарушение закона какими-то внутренними изменениями 
-* CSS Selectors?
+* CSS Selectors?    
 * Dependency injection?
 http://stackoverflow.com/questions/160032/does-dependency-injection-break-the-law-of-demeter
 http://stackoverflow.com/questions/791940/law-of-demeter-on-factory-pattern-and-dependency-injection
@@ -227,6 +227,8 @@ This gets into issues of propagation of results of partial computations, which i
  It’s important to understand that the Law of Demeter is a heuristic, not an end in and of itself. It is not a law in the sense that you “must” write your code in a certain way. Rather, it is a law in the sense that it has been consistently observed that if code complies with the Law of Demeter, it almost certainly has a number of the qualities—encapsulation, loose coupling, etc.—desirable in an OO system.
  
   I just notice that often when Demeter is violated it takes some re-conceptualization of the problem and a completely different factoring of classes to make things much nicer.
+  
+ По ходу закон деметры сложно понять, потому что он показывает косяки архитетуры в целом и нарушение сложно починить в рамках одного или двух классов
 ## Мысли
 ### Статический анализ
  В языке со статической типизацией можно выяснить, какие классы знают о других классах
@@ -324,12 +326,13 @@ http://www.daedtech.com/visualization-mnemonics-for-software-principles # Some r
  
 
 
----- Finished here 
 Ruby examples + some discussion 
 http://devblog.avdi.org/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/ # Deep, Good examples, worth revisiting 
+Some refactoring, based on the previous post
 http://guillecarlos.com/refactoring-law-of-demeter.html # Some ruby refactoring from really ugly code to just ugly code
 
-https://sites.google.com/site/unclebobconsultingllc/active-record-vs-objects # Link from the previous post
+https://sites.google.com/site/unclebobconsultingllc/active-record-vs-objects # Link from the previous post, nothing on demeter, mostly about  Active Record and data structures
+---- Finished here 
 http://programmers.stackexchange.com/questions/214721/rails-law-of-demeter-confusion
 http://rails-bestpractices.com/posts/15-the-law-of-demeter
 http://www.informit.com/articles/article.aspx?p=1834700&seqNum=6

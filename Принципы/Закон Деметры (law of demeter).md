@@ -229,6 +229,8 @@ This gets into issues of propagation of results of partial computations, which i
   I just notice that often when Demeter is violated it takes some re-conceptualization of the problem and a completely different factoring of classes to make things much nicer.
   
  По ходу закон деметры сложно понять, потому что он показывает косяки архитетуры в целом и нарушение сложно починить в рамках одного или двух классов
+ 
+As a law it's more like 'floss your teeth every day' than like gravity. You might prefer not to confess to your dentist but occasional violations will not collapse the universe.
 ## Мысли
 ### Статический анализ
  В языке со статической типизацией можно выяснить, какие классы знают о других классах
@@ -326,20 +328,40 @@ http://www.daedtech.com/visualization-mnemonics-for-software-principles # Some r
  
 
 
-Ruby examples + some discussion 
-http://devblog.avdi.org/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/ # Deep, Good examples, worth revisiting 
-Some refactoring, based on the previous post
-http://guillecarlos.com/refactoring-law-of-demeter.html # Some ruby refactoring from really ugly code to just ugly code
+## Ruby examples + some discussion 
 
-https://sites.google.com/site/unclebobconsultingllc/active-record-vs-objects # Link from the previous post, nothing on demeter, mostly about  Active Record and data structures
----- Finished here 
-http://programmers.stackexchange.com/questions/214721/rails-law-of-demeter-confusion
+Deep, Good examples, worth revisiting #revisit 
+http://devblog.avdi.org/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/
+
+Some ruby refactoring from really ugly code to just ugly code
+http://guillecarlos.com/refactoring-law-of-demeter.html 
+
+Link from the previous post, nothing on demeter, mostly about  Active Record and data structures
+https://sites.google.com/site/unclebobconsultingllc/active-record-vs-objects 
+
+Simple example of refactoring from @invoice.user.name  to @invoice.user_name using Ruby delegation 
 http://rails-bestpractices.com/posts/15-the-law-of-demeter
-http://www.informit.com/articles/article.aspx?p=1834700&seqNum=6
+
+Nice overview, I like the Consequences of Violations section #revisit  
+http://www.informit.com/articles/article.aspx?p=1834700&seqNum=6 
+
+ 
+
+This looks like an attempt to transform all dots into underscores. May probably be helpful for the future refactorings, similar to having getters and setters everywhere.   
 https://github.com/emerleite/demeter
-http://www.dan-manges.com/blog/37 # Good example on not just having properties out, but having the logic out, makes more sense
+  
+
+One of the most quoted, good example on not just having properties out, but having the logic out, makes more sense, many comments #revisit
+http://www.dan-manges.com/blog/37
+
+ 
+Discussion regarding the previous link, interesting point of view in the first comment #revisit
+http://programmers.stackexchange.com/questions/214721/rails-law-of-demeter-confusion 
+ 
+Paperboy example in Ruby     
 http://nithinbekal.com/posts/demeter/
 
+   ---- Finished here
 "I've always felt I'd be more comfortable with the Law of Demeter if it were called the Suggestion of Demeter." Martin Fowler
 http://martinfowler.com/articles/mocksArentStubs.html
 

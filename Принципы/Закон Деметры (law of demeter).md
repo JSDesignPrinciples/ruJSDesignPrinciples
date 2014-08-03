@@ -362,8 +362,6 @@ Paperboy example in Ruby
 http://nithinbekal.com/posts/demeter/
 
    ---- Finished here
-"I've always felt I'd be more comfortable with the Law of Demeter if it were called the Suggestion of Demeter." Martin Fowler
-http://martinfowler.com/articles/mocksArentStubs.html
 
 Some erlang stuff
 http://erlang.org/pipermail/erlang-questions/2013-January/071991.html
@@ -401,6 +399,8 @@ http://www.markhneedham.com/blog/2009/03/12/oo-reducing-the-cost-oflots-of-stuff
 >> done.for.the.day.about.to.go.to.the.hotel.where.i.specificatlly.wont.think.about.the.law.of.demeter() 
 
 Some java stuff
+"I've always felt I'd be more comfortable with the Law of Demeter if it were called the Suggestion of Demeter." Martin Fowler
+http://martinfowler.com/articles/mocksArentStubs.html
 http://misko.hevery.com/2008/07/18/breaking-the-law-of-demeter-is-like-looking-for-a-needle-in-the-haystack/
 http://java.dzone.com/articles/law-demeter
 http://vitalflux.com/law-demeter-violations-fix/
